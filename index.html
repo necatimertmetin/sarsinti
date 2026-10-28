@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Sarsıntı — Türkiye canlı deprem takibi</title>
+    <meta name="description" content="Türkiye ve çevresindeki depremleri canlı takip et: harita, yakınındaki depremler, tahmini şiddet, uyarılar, istatistikler ve deprem çantası listesi." />
+    <meta name="theme-color" content="#d6342c" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta property="og:title" content="Sarsıntı — Türkiye canlı deprem takibi" />
+    <meta property="og:description" content="Son depremler, yakınındaki sarsıntılar, tahmini şiddet ve deprem hazırlığı tek yerde." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://necatimertmetin.github.io/sarsinti/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      try {
+        var t = JSON.parse(localStorage.getItem('sarsinti.theme') || '"auto"')
+        var d = t === 'dark' || (t === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.dataset.theme = d ? 'dark' : 'light'
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <noscript>Sarsıntı'yı kullanmak için JavaScript'i açman gerekiyor.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
